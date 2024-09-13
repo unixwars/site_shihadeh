@@ -1,44 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="language" content="es" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
 <title>.:Shihadeh:. - .:Somos pocos, pero somos:. </title>
-<link rel="stylesheet" href="misc/style.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css"/>
+<link rel="shortcut icon" href="assets/img/favicon.png">
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+   ga('create', 'UA-2278041-4', 'shihadeh.net');
+   ga('send', 'pageview');
+ </script>
 </head>
-
-<body id="index_body">
-  <div>
-    <a href="http://unixwars.com/">blog</a>
-    <a href="http://webmail.shihadeh.net">webmail</a>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>All empires fall eventually</h1>
+      <h2></h2>
+    </div>
+    <div id="content">
+    </div>
+    <div id="footer">
+      <a href="https://gmail.com"><i class="fa-solid fa-envelopes-bulk"></i></a>
+    </div>
   </div>
-  <div id="content" class="status"></div>
-
-  <script type="text/javascript">
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-2278041-4', 'shihadeh.net');
-    ga('send', 'pageview');
-  </script>
-
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript">
-    $.ajax({url: "misc/tags.txt"}).done(function($data) {
-      var tags = $data.split('\n');
-
-      function transition() {
-        tag = tags[Math.floor(Math.random() * tags.length)]
-        $("#content").fadeOut(function() {
-          $(this).text(tag).fadeIn();
-        });
-      };
-      transition();
-      setInterval(transition, 5000);
-    });
-  </script>
+  <script src="assets/js/main.js"></script>    
 </body>
 </html>
