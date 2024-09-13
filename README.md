@@ -1,5 +1,2 @@
-This repo holds a static one page website.
-
-It had to be done! Thanks GitHub! :)
-
+Static one page website to host in Github Pages.
 Move along, nothing to see here.
